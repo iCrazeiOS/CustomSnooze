@@ -8,12 +8,18 @@ static int bedtimeDuration = 10;
 
 %hook MTUserDefaults
 -(NSInteger)integerForKey:(NSString *)key defaultValue:(NSInteger)defaultValue {
+	if (!tweakEnabled) return %orig;
+
+	// regular alarms
 	if ([key isEqualToString:@"MTAlarmSnoozeDuration"]) {
 		return alarmDuration;
 	}
+
+	// bedtime alarms
 	if ([key isEqualToString:@"MTBedtimeSnoozeDuration"]) {
 		return bedtimeDuration;
 	}
+
 	return %orig;
 }
 %end
@@ -27,8 +33,6 @@ static void loadPrefs() {
 
 %ctor {
 	loadPrefs();
-	if (!tweakEnabled) return;
-
 	CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.icraze.customsnoozeprefs.settingschanged"), NULL, CFNotificationSuspensionBehaviorCoalesce);
 	%init;
 }
