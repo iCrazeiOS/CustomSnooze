@@ -1,0 +1,9 @@
+Package: com.icraze.customsnooze
+Name: CustomSnooze
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Customise the alarm snooze duration
+Maintainer: iCraze
+Author: iCraze
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)

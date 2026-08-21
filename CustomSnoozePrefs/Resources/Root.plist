@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Options</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.icraze.customsnoozeprefs</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Tweak Enabled</string>
+			<key>PostNotification</key>
+			<string>com.icraze.customsnoozeprefs.settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Alarm Snooze Duration</string>
+			<key>footerText</key>
+			<string>Adjust the amount of time (in minutes) that regular alarms should snooze for. Default: 9</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<real>9</real>
+			<key>defaults</key>
+			<string>com.icraze.customsnoozeprefs</string>
+			<key>key</key>
+			<string>alarmDuration</string>
+			<key>min</key>
+			<real>1</real>
+			<key>max</key>
+			<real>20</real>
+			<key>showValue</key>
+			<true/>
+			<key>isSegmented</key>
+			<true/>
+			<key>segmentCount</key>
+			<integer>19</integer>
+			<key>PostNotification</key>
+			<string>com.icraze.customsnoozeprefs.settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Bedtime Snooze Duration</string>
+			<key>footerText</key>
+			<string>Adjust the amount of time (in minutes) that bedtime alarms should snooze for. Default: 10</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<real>10</real>
+			<key>defaults</key>
+			<string>com.icraze.customsnoozeprefs</string>
+			<key>key</key>
+			<string>bedtimeDuration</string>
+			<key>min</key>
+			<real>1</real>
+			<key>max</key>
+			<real>20</real>
+			<key>showValue</key>
+			<true/>
+			<key>isSegmented</key>
+			<true/>
+			<key>segmentCount</key>
+			<integer>19</integer>
+			<key>PostNotification</key>
+			<string>com.icraze.customsnoozeprefs.settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Links/Support</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>github</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Tweak Source Code</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>twitter</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Twitter (@iCrazeiOS)</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>paypal</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Buy me a coffee ☕️ (PayPal)</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Check Out My Other Tweaks</string>
+			<key>footerText</key>
+			<string>Rune - The easiest way to control your iOS device!&#xA;&#xA;Scrobbit - Automatic Last.fm music scrobbler for any app!&#xA;&#xA;SleepSaver 2 - Add beautiful screensavers to your device</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openTweakForSpecifier:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Rune (iOS 14-26)</string>
+			<key>bundleIdentifier</key>
+			<string>com.icraze.rune</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openTweakForSpecifier:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Scrobbit (iOS 12-26)</string>
+			<key>bundleIdentifier</key>
+			<string>com.icraze.scrobbit</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openTweakForSpecifier:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>SleepSaver 2 (iOS 14-26)</string>
+			<key>bundleIdentifier</key>
+			<string>com.icraze.sleepsaver2</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>CustomSnooze</string>
+</dict>
+</plist>

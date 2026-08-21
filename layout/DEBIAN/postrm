@@ -1,0 +1,4 @@
+#!/bin/bash
+
+killall -9 mobiletimerd 2>/dev/null || true
+launchctl start com.apple.mobiletimerd
